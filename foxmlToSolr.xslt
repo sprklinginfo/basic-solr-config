@@ -11,8 +11,10 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
   xmlns:fedora="info:fedora/fedora-system:def/relations-external#"
-  xmlns:dwc="http://rs.tdwg.org/dwc/xsd/simpledarwincore/"
   xmlns:uvalibdesc="http://dl.lib.virginia.edu/bin/dtd/descmeta/descmeta.dtd"
+  xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+  xmlns:dwr="http://rs.tdwg.org/dwc/dwcrecord/" 
+  xmlns:dcterms="http://purl.org/dc/terms/" 
   xmlns:uvalibadmin="http://dl.lib.virginia.edu/bin/admin/admin.dtd/"
   xmlns:res="http://www.w3.org/2001/sw/DataAccess/rf1/result"
   xmlns:eaccpf="urn:isbn:1-931666-33-4"
@@ -100,12 +102,13 @@
   <xsl:include href="/var/lib/tomcat7/webapps/fedoragsearch/WEB-INF/classes/fgsconfigFinal/index/FgsIndex/islandora_transforms/EACCPF_to_solr.xslt"/>
   <xsl:include href="/var/lib/tomcat7/webapps/fedoragsearch/WEB-INF/classes/fgsconfigFinal/index/FgsIndex/islandora_transforms/TEI_to_solr.xslt"/>
   <xsl:include href="/var/lib/tomcat7/webapps/fedoragsearch/WEB-INF/classes/fgsconfigFinal/index/FgsIndex/islandora_transforms/text_to_solr.xslt"/>
-  <!--<xsl:include href="/var/lib/tomcat7/webapps/fedoragsearch/WEB-INF/classes/fgsconfigFinal/index/FgsIndex/islandora_transforms/XML_to_one_solr_field.xslt"/>-->
+  <xsl:include href="/var/lib/tomcat7/webapps/fedoragsearch/WEB-INF/classes/fgsconfigFinal/index/FgsIndex/islandora_transforms/XML_to_one_solr_field.xslt"/>
   <xsl:include href="/var/lib/tomcat7/webapps/fedoragsearch/WEB-INF/classes/fgsconfigFinal/index/FgsIndex/islandora_transforms/XML_text_nodes_to_solr.xslt"/>
   <xsl:include href="/var/lib/tomcat7/webapps/fedoragsearch/WEB-INF/classes/fgsconfigFinal/index/FgsIndex/islandora_transforms/MADS_to_solr.xslt"/>
   <xsl:include href="/var/lib/tomcat7/webapps/fedoragsearch/WEB-INF/classes/fgsconfigFinal/index/FgsIndex/islandora_transforms/WORKFLOW_to_solr.xslt"/>
   <xsl:include href="/var/lib/tomcat7/webapps/fedoragsearch/WEB-INF/classes/fgsconfigFinal/index/FgsIndex/islandora_transforms/slurp_all_chemicalML_to_solr.xslt"/>
-
+  <xsl:include href="/var/lib/tomcat7/webapps/fedoragsearch/WEB-INF/classes/fgsconfigFinal/index/FgsIndex/islandora_transforms/dwc_to_solr.xslt"/>
+  
   <!--  Used for indexing other objects.
   <xsl:include href="/usr/local/fedora/tomcat/webapps/fedoragsearch/WEB-INF/classes/fgsconfigFinal/index/FgsIndex/islandora_transforms/library/traverse-graph.xslt"/>
   -->
