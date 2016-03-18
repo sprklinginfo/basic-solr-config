@@ -254,7 +254,9 @@
       termPositions="true" termOffsets="true"/>
     <!--<dynamicField name="dc.*" type="text_general" indexed="true" stored="true" multiValued="true"/>-->
     <dynamicField name="dwc.*"  type="text_general" indexed="true" stored="true" multiValued="true"/>
-    <dynamicField name="dcterms.*"  type="text_general" indexed="true" stored="true" multiValued="true"/>
+    <dynamicField name="MADS_*"  type="text_general" indexed="true" stored="true" multiValued="true"/>
+    <!--<dynamicField name="dcterms.*"  type="text_general" indexed="true" stored="true" multiValued="true"/>-->
+    <dynamicField name="or_*" type="text_general" indexed="true" stored="true" multiValued="true"/>
     <dynamicField name="*" type="text_en" indexed="true" stored="true" multiValued="true"/>
 
   </fields>

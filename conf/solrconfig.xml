@@ -368,8 +368,8 @@
          have some sort of hard autoCommit to limit the log size.
       -->
      <autoCommit>
-       <maxDocs>1</maxDocs>
-       <maxTime>1</maxTime>
+       <maxDocs>100</maxDocs>
+       <maxTime>10000</maxTime>
        <openSearcher>true</openSearcher> 
      </autoCommit>
     <!-- softAutoCommit is like autoCommit except it causes a
